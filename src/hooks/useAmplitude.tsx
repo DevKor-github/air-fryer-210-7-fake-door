@@ -1,6 +1,6 @@
-import { useEffectOnce } from './useEffectOnce';
-
 import * as amplitude from '@amplitude/analytics-browser';
+
+import { useEffectOnce } from '@/hooks/useEffectOnce';
 
 const useAmplitude = () => {
   useEffectOnce(() => {

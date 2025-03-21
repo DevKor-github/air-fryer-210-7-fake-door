@@ -1,9 +1,16 @@
-import useAmplitude from './hooks/useAmplitude';
+import Description from '@/components/Description';
+import EmailForm from '@/components/EmailForm';
+import useAmplitude from '@/hooks/useAmplitude';
 
 function App() {
   useAmplitude();
 
-  return <>까치는 비가 와도 운다</>;
+  return (
+    <div>
+      <EmailForm />
+      <Description />
+    </div>
+  );
 }
 
 export default App;
