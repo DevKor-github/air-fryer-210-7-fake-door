@@ -1,15 +1,13 @@
-import Description from '@/components/Description';
-import EmailForm from '@/components/EmailForm';
-import useAmplitude from '@/hooks/useAmplitude';
+import EmailForm from '@/features/EmailForm';
+import AmplitudeProvider from '@/providers/AmplitudeProvider';
 
 function App() {
-  useAmplitude();
-
   return (
-    <div>
-      <EmailForm />
-      <Description />
-    </div>
+    <AmplitudeProvider>
+      <div>
+        <EmailForm label="출시 예약하기" />
+      </div>
+    </AmplitudeProvider>
   );
 }
 
