@@ -49,6 +49,7 @@
 
     font-weight: 300;
     line-height: 1.4;
+    white-space: pre-wrap;
   }
 
   display: flex;
@@ -91,6 +92,7 @@
   .Description {
     & p {
       font-size: 0.625rem;
+      text-align: center;
     }
 
     align-items: center;

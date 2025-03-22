@@ -1,6 +1,7 @@
 .Container {
   display: flex;
   width: 100%;
+  overflow-x: hidden;
   flex-direction: column;
   gap: 8.44rem;
 
