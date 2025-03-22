@@ -12,7 +12,12 @@ const EmailForm = () => {
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    amplitude.track('Submit Email');
+    amplitude.track({
+      event_type: 'submit email',
+      user_properties: {
+        from,
+      },
+    });
 
     if (email.length === 0) {
       alert('이메일을 입력해주세요!');
