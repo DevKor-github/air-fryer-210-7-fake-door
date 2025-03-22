@@ -2,10 +2,14 @@ import Logo from '@/assets/Logo';
 
 import s from './Intro.module.css';
 import EmailForm from '@/common/components/EmailForm';
+import TopBackground from '@/assets/top-bg.webp';
 
 const Intro = () => {
   return (
-    <div className={s.FlexWrapper}>
+    <div
+      className={s.FlexWrapper}
+      style={{ backgroundImage: `url(${TopBackground})` }}
+    >
       <div className={s.Wrapper}>
         <div className={s.Contents}>
           <div className={s.Title}>
