@@ -4,8 +4,11 @@ import s from './Intro.module.css';
 import EmailForm from '@/common/components/EmailForm';
 import TopBackground from '@/assets/top-bg.webp';
 import MobileBr from '@/common/components/MobileBr';
+import ScenarioImage from '@/assets/scenario.png';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 const Intro = () => {
+  const showScenario = useMediaQuery('(min-width: 1300px)');
   return (
     <div
       className={s.FlexWrapper}
@@ -34,6 +37,9 @@ const Intro = () => {
           </div>
         </div>
         <EmailForm />
+        {showScenario && (
+          <img className={s.Scenario} src={ScenarioImage} alt="scenario" />
+        )}
       </div>
     </div>
   );
