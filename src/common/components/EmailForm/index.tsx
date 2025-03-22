@@ -14,7 +14,7 @@ const EmailForm = () => {
     (async () => {
       try {
         await postEmail({ email });
-        alert('정상 제출 되었습니다');
+        alert('이메일이 정상적으로 등록되었어요');
         setEmail('');
       } catch (error) {
         alert('다시 시도해주세요');
