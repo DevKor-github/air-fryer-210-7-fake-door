@@ -7,3 +7,13 @@
   margin-top: 4.19rem;
   margin-bottom: 4.06rem;
 }
+
+
+@media screen and (max-width:925px) {
+  .Container {
+    gap: 4.44rem;
+
+    margin-top: 3.19rem;
+    margin-bottom: 4.08rem;
+  }
+}

@@ -9,6 +9,7 @@
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 
@@ -61,5 +62,51 @@
 
   & b {
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width:925px) {
+  .FlexWrapper {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    padding: 8rem 1rem 4rem 1rem;
+
+  }
+
+  .Wrapper {
+    max-width: 18.12rem;
+    max-height: none;
+
+    justify-content: start;
+    align-items: center;
+    gap: 5.56rem;
+  }
+
+  .Contents {
+    gap: 5.625rem;
+    align-items: center;
+  }
+
+  .Title {
+    gap: 0.5rem;
+    align-items: center;
+
+    & h2 {
+      font-size: 0.625rem;
+      height: 0.875rem;
+    }
+  }
+
+  .Logo {
+    width: 15.5rem;
+  }
+
+  .Descriptions {
+    font-size: 0.6875rem;
+    gap: 1.5rem;
+    text-align: center;
   }
 }

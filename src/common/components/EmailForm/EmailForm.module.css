@@ -45,3 +45,33 @@
     font-weight: 700;
   }
 }
+
+@media screen and (max-width:925px) {
+  .Wrapper {
+    gap: 0.5rem;
+
+    & label {
+      font-size: 0.75rem;
+    }
+  }
+
+  .Form {
+    gap: 0.625rem;
+    font-size: 0.75rem;
+
+    & input {
+      width: 13.875rem;
+      height: 2.625rem;
+      border-radius: 4px;
+
+      border: 0.5px solid #F0F0F0;
+      padding: 0.69rem 0.81rem;
+    }
+
+    & button {
+      width: 3.625rem;
+      height: 2.625rem;
+      border-radius: 4px;
+    }
+  }
+}

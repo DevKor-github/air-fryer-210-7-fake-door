@@ -62,3 +62,48 @@
   top: 50%;
   transform: translate3d(0, -50%, 0);
 }
+
+@media screen and (max-width:925px) {
+  .Wrapper {
+    padding: 0;
+    margin: 0 1rem;
+    max-width: 19.75rem;
+
+    align-items: center;
+
+    gap: 1.5rem;
+  }
+
+  .Header {
+    gap: 0.25rem;
+    align-items: center;
+
+    & div {
+      font-size: 1.75rem;
+    }
+
+    & h2 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  .Description {
+    & p {
+      font-size: 0.625rem;
+    }
+
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .Image {
+    position: inherit;
+    left: auto;
+    top: auto;
+    transform: none;
+    max-width: unset;
+    min-width: unset;
+    width: 33.3125rem;
+  }
+}
