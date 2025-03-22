@@ -11,6 +11,11 @@ const EmailForm = () => {
     event.preventDefault();
     amplitude.track('Submit Email');
 
+    if (email.length === 0) {
+      alert('이메일을 입력해주세요!');
+      return;
+    }
+
     (async () => {
       try {
         await postEmail({ email });
