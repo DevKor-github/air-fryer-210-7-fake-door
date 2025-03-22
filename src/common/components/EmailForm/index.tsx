@@ -5,6 +5,9 @@ import { postEmail } from '@/common/components/EmailForm/apis/postEmail';
 import s from './EmailForm.module.css';
 
 const EmailForm = () => {
+  const searchParams = new URLSearchParams(document.location.search);
+  const from = searchParams.get('c');
+
   const [email, setEmail] = useState('');
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -18,7 +21,7 @@ const EmailForm = () => {
 
     (async () => {
       try {
-        await postEmail({ email });
+        await postEmail({ email, from });
         alert('이메일이 정상적으로 등록되었어요');
         setEmail('');
       } catch (error) {
