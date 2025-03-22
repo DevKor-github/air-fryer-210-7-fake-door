@@ -1,12 +1,10 @@
-import EmailForm from '@/features/EmailForm';
+import Intro from '@/features/Contents/Intro';
 import AmplitudeProvider from '@/providers/AmplitudeProvider';
 
 function App() {
   return (
     <AmplitudeProvider>
-      <div>
-        <EmailForm label="출시 예약하기" />
-      </div>
+      <Intro />
     </AmplitudeProvider>
   );
 }

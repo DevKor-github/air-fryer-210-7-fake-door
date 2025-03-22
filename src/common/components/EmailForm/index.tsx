@@ -1,11 +1,10 @@
 import { FormEvent, useState } from 'react';
 import * as amplitude from '@amplitude/analytics-browser';
-import { postEmail } from '@/features/EmailForm/apis/postEmail';
+import { postEmail } from '@/common/components/EmailForm/apis/postEmail';
 
-interface Props {
-  label: string;
-}
-const EmailForm = ({ label }: Props) => {
+import s from './EmailForm.module.css';
+
+const EmailForm = () => {
   const [email, setEmail] = useState('');
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -25,12 +24,13 @@ const EmailForm = ({ label }: Props) => {
   };
 
   return (
-    <div>
-      <label>{label}</label>
-      <form onSubmit={onSubmit}>
+    <div className={s.Wrapper}>
+      <label>출시 예약하기</label>
+      <form className={s.Form} onSubmit={onSubmit}>
         <input
           type="email"
           value={email}
+          placeholder="이메일을 입력해주세요"
           onChange={event => setEmail(event.target.value)}
         />
         <button type="submit">신청</button>
