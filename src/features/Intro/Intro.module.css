@@ -1,15 +1,14 @@
 .FlexWrapper {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5rem;
+  padding-top: 8rem;
 
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 
@@ -22,7 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 11.44rem;
+  gap: 5rem;
 }
 
 .Contents {
@@ -67,7 +66,6 @@
 
 @media screen and (max-width:925px) {
   .FlexWrapper {
-    height: auto;
     flex-direction: column;
     align-items: center;
     justify-content: start;
